@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:P="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    注入方式一-->
+<!--    <bean id="book" class="com.example.Book">-->
+<!--        <property name="name" value="fuck"></property>-->
+<!--        <property name="id" value="12"></property>-->
+<!--    </bean>-->
+
+<!--    注入方式二（用构造器）-->
+<!--    <bean id="book" class="com.example.Book">-->
+<!--        <constructor-arg name="name" value="fuck"></constructor-arg>-->
+<!--        <constructor-arg name="id" value="12"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    注入方式三（用set方法）p标签-->
+    <bean name="book" class="com.example.Book" p:name="fuck" p:id="123"></bean>
+
+
+</beans>
