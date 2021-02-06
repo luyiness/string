@@ -17,7 +17,7 @@
 <!--    </bean>-->
 
 <!--    注入方式三（用set方法）p标签-->
-    <bean name="book" class="com.example.Book" p:name="fuck" p:id="123"></bean>
+    <bean name="book" class="com.example.Book" scope="prototype" p:name="fuck" p:id="123"></bean>
 
 
 <!--    注入对象1-->
