@@ -11,6 +11,7 @@
     <modules>
         <module>1-helloworld</module>
         <module>2-ioc</module>
+        <module>3-zhujie</module>
     </modules>
 
 
