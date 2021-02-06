@@ -20,4 +20,18 @@
     <bean name="book" class="com.example.Book" p:name="fuck" p:id="123"></bean>
 
 
+<!--    注入对象1-->
+<!--    <bean name="library" class="com.example.Library">-->
+<!--        <property name="book" ref="book"></property>-->
+<!--        <property name="name" value="fuck"></property>-->
+<!--    </bean>-->
+
+<!--    注入对象2-->
+    <bean name="library" class="com.example.Library">
+        <property name="book">
+            <bean id="book" class="com.example.Book"></bean>
+        </property>
+        <property name="name" value="fuck"></property>
+    </bean>
+
 </beans>
