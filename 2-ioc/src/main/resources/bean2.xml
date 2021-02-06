@@ -26,4 +26,9 @@
         </property>
     </bean>
 
+
+    <bean id="orderId" class="com.example.Orders" init-method="init" destroy-method="destroy">
+        <property name="name" value="fuck"></property>
+    </bean>
+
 </beans>

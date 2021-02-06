@@ -1,5 +1,6 @@
 import com.example.Book;
 import com.example.Library;
+import com.example.Orders;
 import com.example.Stu;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -31,5 +32,14 @@ public class TestBook {
 
         Stu stu = context.getBean("stu", Stu.class);
         System.out.println(stu);
+    }
+
+    @Test
+    public void test4() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean2.xml");
+
+        Orders order = context.getBean("orderId", Orders.class);
+
+        context.close();
     }
 }
