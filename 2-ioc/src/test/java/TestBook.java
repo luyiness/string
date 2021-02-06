@@ -1,5 +1,6 @@
 import com.example.Book;
 import com.example.Library;
+import com.example.Stu;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,5 +23,13 @@ public class TestBook {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContest.xml");
 
         Library library = context.getBean("library", Library.class);
+    }
+
+    @Test
+    public void test3() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean2.xml");
+
+        Stu stu = context.getBean("stu", Stu.class);
+        System.out.println(stu);
     }
 }

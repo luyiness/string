@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="com.example.Stu">
+        <property name="strings">
+            <list>
+                <value>fuck</value>
+                <value>fuck2</value>
+            </list>
+        </property>
+        
+        <property name="list">
+            <array>
+                <value>fuck1</value>
+                <value>fuck2</value>
+            </array>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="abc"></entry>
+                <entry key="2" value="efd"></entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>
