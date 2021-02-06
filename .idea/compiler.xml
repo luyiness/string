@@ -9,6 +9,7 @@
         <module name="2-ioc" />
         <module name="3-zhujie" />
         <module name="1-helloworld" />
+        <module name="4-aop" />
       </profile>
     </annotationProcessing>
   </component>
