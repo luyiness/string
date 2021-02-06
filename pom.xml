@@ -13,6 +13,7 @@
         <module>2-ioc</module>
         <module>3-zhujie</module>
         <module>4-aop</module>
+        <module>5-jdbc</module>
     </modules>
 
 
